@@ -9,5 +9,20 @@
    <a href="https://t.me/+xTrNWlXbpmQ4MDQy">зеркало</a>
    <a href="./admin_support.html" target="_blank">Поддержка сайта</a>
    <img src="./code80worm.jpg" alt="puzo" width="500px" height="350px">
+  <audio id="music">
+    <source src="ogburger.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const music = document.getElementById("music");
+let played = false;
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" && !played) {
+        played = true;
+        music.play();
+    }
+});
+</script>
 </body>
 </html>
